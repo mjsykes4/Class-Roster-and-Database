@@ -25,6 +25,10 @@ public class Student {
 			}
 		}
 		public void printClassRoster() {
+			System.out.println("  Id" + "\t\t" + "First Name" + "\t\t" + "Last Name" + "\t\t" 
+					+ "Eye Color" + "\t" + "Months Employed");
+			System.out.println("======" + "\t\t" + "==========" + "\t\t" + "========="
+					 + "\t\t" + "=========" + "\t" + "===============");
 			for(Student s1 : classRoster) {
 			System.out.println(s1);			
 		}
@@ -36,10 +40,9 @@ public class Student {
 		System.out.println(studentKey.get(keys.get(myId-1)));
 		System.out.println(studentKey.get(keys.get(myId+1)));
 		}		
-		
 		public String toString() {
 			return (this.getId() + "\t\t" + this.getFirstName() +"\t\t" + this.getLastName() +
-				"\t" + this.getEyeColor() + "\t\t" + this.getMonthsEmployed());
+				"\t\t" + this.getEyeColor() + "\t\t\t" + this.getMonthsEmployed());
 		}
 		 
 			public Student(String id, String firstName, String lastName, String eyeColor, String monthsEmployed) {
@@ -92,26 +95,26 @@ public class Student {
 
 			
 				 static String[][] students = {
-						{"004014", "Aisha", "Covington", "brown", "10"},
-						{"006789", "Arun", "Soma", "brown", "2"},
-						{"772223", "Daniel", "Kiros", "brown", "3"},
-						{"267252", "Dax", "Richards", "brown", "12"},
-						{"008888", "Evan", "Tizard", "brown", "12"},
-						{"523420", "Gabriel", "Hamilton", "other", "10"},
-						{"474143", "Jonathan", "Stafford", "brown", "13"},
-						{"005255", "Joe", "Hill", "brown", "13"},
-						{"215296", "Josh", "Franey", "other", "27"},
-						{"001449", "Karen", "Reiter", "blue", "10"},
-						{"004400", "Kevin", "Tran", "other", "12"},
-						{"005295", "Kyle", "Deen", "blue", "2"},
-						{"306700", "Li", "Lui", "brown", "12"},
-						{"001122", "Michael", "Clair", "other", "12"},
-						{"229949", "Michael", "Sykes", "brown", "13"},
-						{"004444", "Peter", "Choi", "brown", "2"},
-						{"132617", "Reuben", "Turner", "blue", "12"},
-						{"343769", "Shaquil", "Timmons", "brown", "11"},
-						{"001212", "Stephen", "Rook", "brown", "11"},
-						{"009999", "Steve", "Ellwood", "other", "2"},		
+						{"004014", "Aisha   ", "Covington", "brown", "10"},
+						{"006789", "Arun    ", "Soma     ", "brown", " 2"},
+						{"772223", "Daniel  ", "Kiros    ", "brown", " 3"},
+						{"267252", "Dax     ", "Richards ", "brown", "12"},
+						{"008888", "Evan    ", "Tizard   ", "brown", "12"},
+						{"523420", "Gabriel ", "Hamilton ", "other", "10"},
+						{"474143", "Jonathan", "Stafford ", "brown", "13"},
+						{"005255", "Joseph  ", "Hill     ", "brown", "13"},
+						{"215296", "Joshua  ", "Franey   ", "other", "27"},
+						{"001449", "Karen   ", "Reiter   ", "blue ", "10"},
+						{"004400", "Kevin   ", "Tran     ", "other", "12"},
+						{"005295", "Kyle    ", "Deen     ", "blue ", " 2"},
+						{"306700", "Li      ", "Lui      ", "brown", "12"},
+						{"001122", "Michael ", "Clair    ", "other", "12"},
+						{"229949", "Michael ", "Sykes    ", "brown", "13"},
+						{"004444", "Peter   ", "Choi     ", "brown", " 2"},
+						{"132617", "Reuben  ", "Turner   ", "blue ", "12"},
+						{"343769", "Shaquil ", "Timmons  ", "brown", "11"},
+						{"001212", "Stephen ", "Rook     ", "brown", "11"},
+						{"009999", "Steve   ", "Ellwood  ", "other", " 2"},		
 				};
 		}
 
